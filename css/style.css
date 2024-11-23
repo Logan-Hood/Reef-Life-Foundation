@@ -496,6 +496,24 @@ h3 {
 
 
 /* All hero sections */
+.home-hero {
+  text-align: center;
+  padding: 145px;
+  width: 100%;
+  height: 350px;
+  background-image: url(../images/hero-home.png);
+  background-position: center;
+  margin-bottom: 40px;
+}
+
+.home-hero h1 {
+  font-size: 48px;
+  font-family: 'Paprika', cursive;
+  color: #ffffff;
+  margin-bottom: 20px;
+  width: 100%;
+}
+
 .impact-hero {
   text-align: center;
   padding: 145px;
@@ -818,110 +836,92 @@ h3 {
 
 
 /* Home Page */
-
 /* CSS for Index.html, from my first chatgpt test */
-  /* Main Banner */
+.home-tiles {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  width: 100%;
+  max-width: 1200px;
+  gap: 20px;
+  margin-bottom: 40px;
+  text-align: center;
+}
 
+.home-tiles .image-box {
+  position: relative;
+  text-align: center;
+}
 
-  .main-banner {
-    text-align: center;
-    align-items: center;
-    padding: 40px 20px;
-    width: 100%;
-    max-width: 1300px;
-  }
-  
-  .main-banner h1 {
-    font-size: 48px;
-    font-family: 'Paprika', cursive;
-    color: #000000;
-    margin-bottom: 20px;
-    width: 100%;
-  }
-  
-  .banner-images {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    width: 100%;
-    gap: 20px;
-    margin-bottom: 40px;
-  }
-  
-  .banner-images .image-box {
-    position: relative;
-  }
-  
-  .banner-images .image-box img {
-    width: 375px;
-    height: 375px;
-    border-radius: 8px;
-  }
-  
-  .banner-images .button1 {
-    position: absolute;
-    left: 50%;
-    transform: translateX(-50%);
-    padding-top: 40%;
-    background-image: url(../images/impact1.png);
-    background-position: center;
-    color: white;
-    border-radius: 5px;
-    text-decoration: none;
-    font-weight: bold;
-    font-size: 48px;
-    font-family: 'Paprika', cursive;
-    width: 100%;
-    height: 100%;
-  }
-  
-  .banner-images .button2 {
-    position: absolute;
-    left: 50%;
-    transform: translateX(-50%);
-    padding-top: 40%;
-    background-image: url(../images/mission1.png);
-    background-position: center;
-    color: white;
-    border-radius: 5px;
-    text-decoration: none;
-    font-weight: bold;
-    font-size: 48px;
-    font-family: 'Paprika', cursive;
-    width: 100%;
-    height: 100%;
-  }
+.home-tiles .image-box img {
+  width: 375px;
+  height: 375px;
+  border-radius: 8px;
+}
 
-  .banner-images .button3 {
-    position: absolute;
-    left: 50%;
-    transform: translateX(-50%);
-    padding-top: 40%;
-    background-image: url(../images/donate1.png);
-    background-position: center;
-    color: white;
-    border-radius: 5px;
-    text-decoration: none;
-    font-weight: bold;
-    font-size: 48px;
-    font-family: 'Paprika', cursive;
-    width: 100%;
-    height: 100%;
-  }
+.home-tiles .button1 {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  padding-top: 40%;
+  background-image: url(../images/impact1.png);
+  background-position: center;
+  color: white;
+  border-radius: 5px;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 48px;
+  font-family: 'Paprika', cursive;
+  width: 100%;
+  height: 100%;
+}
 
-  .banner-images .button1:hover {
-    background-color: transparent;
-    opacity: 0%;
-  }
-  .banner-images .button2:hover {
-    background-color: transparent;
-    opacity: 0%;
-  }
-  .banner-images .button3:hover {
-    background-color: transparent;
-    opacity: 0%;
-  }
+.home-tiles .button2 {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  padding-top: 40%;
+  background-image: url(../images/mission1.png);
+  background-position: center;
+  color: white;
+  border-radius: 5px;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 48px;
+  font-family: 'Paprika', cursive;
+  width: 100%;
+  height: 100%;
+}
 
+.home-tiles .button3 {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  padding-top: 40%;
+  background-image: url(../images/donate1.png);
+  background-position: center;
+  color: white;
+  border-radius: 5px;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 48px;
+  font-family: 'Paprika', cursive;
+  width: 100%;
+  height: 100%;
+}
+
+.home-tiles .button1:hover {
+  background-color: transparent;
+  opacity: 0%;
+}
+.home-tiles .button2:hover {
+  background-color: transparent;
+  opacity: 0%;
+}
+.home-tiles .button3:hover {
+  background-color: transparent;
+  opacity: 0%;
+}
   /* About Section */
   .about-section {
     padding: 40px;
