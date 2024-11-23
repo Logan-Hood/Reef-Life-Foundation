@@ -126,3 +126,38 @@ document.querySelector('.subscribe-btn').addEventListener('click', () => {
     window.location.href = 'donate.html'; // Replace with the actual donation page link
   });
   
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  // FOR THE CAROUSEL ON project.html
+
+
+  // Optional JavaScript to ensure smooth autoplay (if needed for fallback support)
+document.addEventListener("DOMContentLoaded", () => {
+  const carousel = document.querySelector(".carousel-images");
+  let index = 0;
+
+  setInterval(() => {
+    index = (index + 1) % 3; // Cycle through 3 images
+    carousel.style.transform = `translateX(-${index * 100}%)`;
+  }, 4000); // 4-second intervals
+});
