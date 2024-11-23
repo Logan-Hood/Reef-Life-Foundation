@@ -327,6 +327,23 @@ header {
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /* Footer Styles */
 footer {
   background-color: #34687F;
@@ -478,307 +495,7 @@ h3 {
 }
 
 
-
-
-
-
-
-
-
-
-
-
-/* Home Page */
-
-/* CSS for Index.html, from my first chatgpt test */
-  /* Main Banner */
-
-
-  .main-banner {
-    text-align: center;
-    align-items: center;
-    padding: 40px 20px;
-    width: 100%;
-    max-width: 1300px;
-  }
-  
-  .main-banner h1 {
-    font-size: 48px;
-    font-family: 'Paprika', cursive;
-    color: #000000;
-    margin-bottom: 20px;
-    width: 100%;
-  }
-  
-  .banner-images {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    width: 100%;
-    gap: 20px;
-    margin-bottom: 40px;
-  }
-  
-  .banner-images .image-box {
-    position: relative;
-  }
-  
-  .banner-images .image-box img {
-    width: 375px;
-    height: 375px;
-    border-radius: 8px;
-  }
-  
-  .banner-images .button1 {
-    position: absolute;
-    left: 50%;
-    transform: translateX(-50%);
-    padding-top: 40%;
-    background-image: url(../images/impact1.png);
-    background-position: center;
-    color: white;
-    border-radius: 5px;
-    text-decoration: none;
-    font-weight: bold;
-    font-size: 48px;
-    font-family: 'Paprika', cursive;
-    width: 100%;
-    height: 100%;
-  }
-  
-  .banner-images .button2 {
-    position: absolute;
-    left: 50%;
-    transform: translateX(-50%);
-    padding-top: 40%;
-    background-image: url(../images/mission1.png);
-    background-position: center;
-    color: white;
-    border-radius: 5px;
-    text-decoration: none;
-    font-weight: bold;
-    font-size: 48px;
-    font-family: 'Paprika', cursive;
-    width: 100%;
-    height: 100%;
-  }
-
-  .banner-images .button3 {
-    position: absolute;
-    left: 50%;
-    transform: translateX(-50%);
-    padding-top: 40%;
-    background-image: url(../images/donate1.png);
-    background-position: center;
-    color: white;
-    border-radius: 5px;
-    text-decoration: none;
-    font-weight: bold;
-    font-size: 48px;
-    font-family: 'Paprika', cursive;
-    width: 100%;
-    height: 100%;
-  }
-
-  .banner-images .button1:hover {
-    background-color: transparent;
-    opacity: 0%;
-  }
-  .banner-images .button2:hover {
-    background-color: transparent;
-    opacity: 0%;
-  }
-  .banner-images .button3:hover {
-    background-color: transparent;
-    opacity: 0%;
-  }
-
-  /* About Section */
-  .about-section {
-    padding: 40px;
-    color: white;
-    text-align: center;
-
-  }
-
-.background {
-  background-image: url(../images/fish1.png);
-  width: 100%;
-  height: 700px;
-  background-position: center;
-}
-  
-  .about-section p {
-    font-size: 20px;
-    max-width: 1000px;
-    margin: 0 auto;
-    line-height: 1.8;
-  }
-
-
-
-
-
-
-
-
-/* Your Impact Page */
-.impact-tiles {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-around;
-  width: 100%;
-  max-width: 1200px;
-  gap: 20px;
-  margin-bottom: 40px;
-  text-align: center;
-}
-
-.impact-tiles .image-box {
-  position: relative;
-}
-
-.impact-tiles .image-box img {
-  width: 375px;
-  height: 375px;
-  border-radius: 8px;
-}
-
-.impact-tiles .button1 {
-  position: absolute;
-  left: 50%;
-  transform: translateX(-50%);
-  padding-top: 40%;
-  background-image: url(../images/sintM1.png);
-  background-position: center;
-  color: white;
-  border-radius: 5px;
-  text-decoration: none;
-  font-weight: bold;
-  font-size: 48px;
-  font-family: 'Paprika', cursive;
-  width: 100%;
-  height: 100%;
-}
-
-.impact-tiles .button2 {
-  position: absolute;
-  left: 50%;
-  transform: translateX(-50%);
-  padding-top: 40%;
-  background-image: url(../images/intelli1.png);
-  background-position: center;
-  color: white;
-  border-radius: 5px;
-  text-decoration: none;
-  font-weight: bold;
-  font-size: 48px;
-  font-family: 'Paprika', cursive;
-  width: 100%;
-  height: 100%;
-}
-
-.impact-tiles .button1:hover {
-  background-color: transparent;
-  opacity: 0%;
-}
-.impact-tiles .button2:hover {
-  background-color: transparent;
-  opacity: 0%;
-}
-
-
-
-
-
-
-
-/* Impact Bottom Section */
-.impact-bottom {
-  display: flex;
-  justify-content: space-around;
-  align-items: flex-start;
-  gap: 20px;
-  padding: 20px 10%;
-  width: 80%;
-  background-color: #f5f5f5; /* Light background color */
-}
-
-.subscribe, .cta-donate {
-  flex: 1; /* Equal column width */
-  max-width: 48%; /* Prevent excessive stretching */
-  text-align: center;
-}
-
-.subscribe p, .cta-donate p {
-  font-size: 18px;
-  color: #000000;
-  margin-bottom: 18px;
-}
-
-.subscribe-box2 {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 10px;
-}
-
-.subscribe-box2 input {
-  flex: 1;
-  padding: 10px;
-  font-size: 14px;
-  border: 1px solid #98B1A7;
-  border-radius: 4px;
-}
-
-.subscribe-box2 button {
-  background-color: #F29755;
-  color: #fff;
-  border: none;
-  padding: 10px 20px;
-  cursor: pointer;
-  border-radius: 4px;
-  font-size: 14px;
-  font-weight: bold;
-}
-
-.donate-btn {
-  background-color: #34687F;
-  color: #fff;
-  border: none;
-  padding: 10px 30px;
-  font-size: 16px;
-  font-weight: bold;
-  cursor: pointer;
-  border-radius: 4px;
-}
-
-.donate-btn:hover, .subscribe-box2 button:hover {
-  background-color: #98B1A7; /* Hover color */
-}
-
-@media (max-width: 768px) {
-  .impact-bottom {
-    flex-direction: column; /* Stack on smaller screens */
-    text-align: center;
-    gap: 30px;
-  }
-
-  .subscribe, .cta-donate {
-    max-width: 100%; /* Full width */
-  }
-}
-
-
-
-
-
-
-
-
-
-
-/* hero sections */
+/* All hero sections */
 .impact-hero {
   text-align: center;
   padding: 145px;
@@ -1066,4 +783,750 @@ h3 {
   color: #ffffff;
   margin-bottom: 20px;
   width: 100%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Home Page */
+
+/* CSS for Index.html, from my first chatgpt test */
+  /* Main Banner */
+
+
+  .main-banner {
+    text-align: center;
+    align-items: center;
+    padding: 40px 20px;
+    width: 100%;
+    max-width: 1300px;
+  }
+  
+  .main-banner h1 {
+    font-size: 48px;
+    font-family: 'Paprika', cursive;
+    color: #000000;
+    margin-bottom: 20px;
+    width: 100%;
+  }
+  
+  .banner-images {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    width: 100%;
+    gap: 20px;
+    margin-bottom: 40px;
+  }
+  
+  .banner-images .image-box {
+    position: relative;
+  }
+  
+  .banner-images .image-box img {
+    width: 375px;
+    height: 375px;
+    border-radius: 8px;
+  }
+  
+  .banner-images .button1 {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    padding-top: 40%;
+    background-image: url(../images/impact1.png);
+    background-position: center;
+    color: white;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 48px;
+    font-family: 'Paprika', cursive;
+    width: 100%;
+    height: 100%;
+  }
+  
+  .banner-images .button2 {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    padding-top: 40%;
+    background-image: url(../images/mission1.png);
+    background-position: center;
+    color: white;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 48px;
+    font-family: 'Paprika', cursive;
+    width: 100%;
+    height: 100%;
+  }
+
+  .banner-images .button3 {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    padding-top: 40%;
+    background-image: url(../images/donate1.png);
+    background-position: center;
+    color: white;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 48px;
+    font-family: 'Paprika', cursive;
+    width: 100%;
+    height: 100%;
+  }
+
+  .banner-images .button1:hover {
+    background-color: transparent;
+    opacity: 0%;
+  }
+  .banner-images .button2:hover {
+    background-color: transparent;
+    opacity: 0%;
+  }
+  .banner-images .button3:hover {
+    background-color: transparent;
+    opacity: 0%;
+  }
+
+  /* About Section */
+  .about-section {
+    padding: 40px;
+    color: white;
+    text-align: center;
+
+  }
+
+.background {
+  background-image: url(../images/fish1.png);
+  width: 100%;
+  height: 700px;
+  background-position: center;
+}
+  
+  .about-section p {
+    font-size: 20px;
+    max-width: 1000px;
+    margin: 0 auto;
+    line-height: 1.8;
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Your Impact Page */
+.impact-tiles {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  width: 100%;
+  max-width: 1200px;
+  gap: 20px;
+  margin-bottom: 40px;
+  text-align: center;
+}
+
+.impact-tiles .image-box {
+  position: relative;
+}
+
+.impact-tiles .image-box img {
+  width: 375px;
+  height: 375px;
+  border-radius: 8px;
+}
+
+.impact-tiles .button1 {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  padding-top: 40%;
+  background-image: url(../images/sintM1.png);
+  background-position: center;
+  color: white;
+  border-radius: 5px;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 48px;
+  font-family: 'Paprika', cursive;
+  width: 100%;
+  height: 100%;
+}
+
+.impact-tiles .button2 {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  padding-top: 40%;
+  background-image: url(../images/intelli1.png);
+  background-position: center;
+  color: white;
+  border-radius: 5px;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 48px;
+  font-family: 'Paprika', cursive;
+  width: 100%;
+  height: 100%;
+}
+
+.impact-tiles .button1:hover {
+  background-color: transparent;
+  opacity: 0%;
+}
+.impact-tiles .button2:hover {
+  background-color: transparent;
+  opacity: 0%;
+}
+
+/* Impact Bottom Section */
+.impact-bottom {
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-start;
+  gap: 20px;
+  padding: 20px 10%;
+  width: 80%;
+  background-color: #f5f5f5; /* Light background color */
+}
+
+.subscribe, .cta-donate {
+  flex: 1; /* Equal column width */
+  max-width: 48%; /* Prevent excessive stretching */
+  text-align: center;
+}
+
+.subscribe p, .cta-donate p {
+  font-size: 18px;
+  color: #000000;
+  margin-bottom: 18px;
+}
+
+.subscribe-box2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+.subscribe-box2 input {
+  flex: 1;
+  padding: 10px;
+  font-size: 14px;
+  border: 1px solid #98B1A7;
+  border-radius: 4px;
+}
+
+.subscribe-box2 button {
+  background-color: #F29755;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  border-radius: 4px;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.donate-btn {
+  background-color: #34687F;
+  color: #fff;
+  border: none;
+  padding: 10px 30px;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+.donate-btn:hover, .subscribe-box2 button:hover {
+  background-color: #98B1A7; /* Hover color */
+}
+
+@media (max-width: 768px) {
+  .impact-bottom {
+    flex-direction: column; /* Stack on smaller screens */
+    text-align: center;
+    gap: 30px;
+  }
+
+  .subscribe, .cta-donate {
+    max-width: 100%; /* Full width */
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* donate.html */
+
+.donate-tiles {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  width: 100%;
+  max-width: 1200px;
+  gap: 20px;
+  margin-bottom: 40px;
+  text-align: center;
+}
+
+.donate-tiles .image-box {
+  position: relative;
+  text-align: center;
+}
+
+.donate-tiles .image-box img {
+  width: 375px;
+  height: 375px;
+  border-radius: 8px;
+}
+
+.donate-tiles .button1 {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  padding-top: 60%;
+  background-image: url(../images/reef2.png);
+  background-position: center;
+  color: white;
+  border-radius: 5px;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 48px;
+  font-family: 'Paprika', cursive;
+  width: 100%;
+  height: 100%;
+}
+
+.donate-tiles .button2 {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  padding-top: 60%;
+  background-image: url(../images/gift2.png);
+  background-position: center;
+  color: white;
+  border-radius: 5px;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 48px;
+  font-family: 'Paprika', cursive;
+  width: 100%;
+  height: 100%;
+}
+
+.donate-tiles .button3 {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  padding-top: 60%;
+  background-image: url(../images/direct2.png);
+  background-position: center;
+  color: white;
+  border-radius: 5px;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 48px;
+  font-family: 'Paprika', cursive;
+  width: 100%;
+  height: 100%;
+}
+
+.donate-tiles .button1:hover {
+  background-color: transparent;
+  opacity: 0%;
+}
+.donate-tiles .button2:hover {
+  background-color: transparent;
+  opacity: 0%;
+}
+.donate-tiles .button3:hover {
+  background-color: transparent;
+  opacity: 0%;
+}
+
+.donate-tiles p {
+  width: 375px;
+  background-color: #98B1A7;
+  font-size: 18px;
+  padding: 12px;
+}
+
+
+
+
+
+/* media.html */
+
+.media-tiles {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  width: 100%;
+  max-width: 1200px;
+  gap: 20px;
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.media-tiles .image-box {
+  position: relative;
+  text-align: center;
+}
+
+.media-tiles .image-box img {
+  width: 375px;
+  height: 375px;
+  border-radius: 8px;
+}
+
+.media-tiles .button1 {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  padding-top: 40%;
+  background-image: url(../images/blog2.png);
+  background-position: center;
+  color: white;
+  border-radius: 5px;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 48px;
+  font-family: 'Paprika', cursive;
+  width: 100%;
+  height: 100%;
+}
+
+.media-tiles .button2 {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  padding-top: 40%;
+  background-image: url(../images/podcast2.png);
+  background-position: center;
+  color: white;
+  border-radius: 5px;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 48px;
+  font-family: 'Paprika', cursive;
+  width: 100%;
+  height: 100%;
+}
+
+.media-tiles .button1:hover {
+  background-color: transparent;
+  opacity: 0%;
+}
+.media-tiles .button2:hover {
+  background-color: transparent;
+  opacity: 0%;
+}
+
+.media-line h1 {
+  font-size: 24px;
+  font-family: 'Paprika', cursive;
+  margin-bottom: 40px;
+  width: 700px;
+  text-align: center;
+}
+
+.media-summary {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #98B1A7;
+  width: 100%;
+  flex-direction: column;
+}
+
+.media-summary p {
+  font-size: 18px;
+  font-family: 'Mulish', sans-serif;
+  margin-bottom: 20px;
+  margin-top: 20px;
+  text-align: center;
+  width: 40%;
+}
+
+.media-summary h1 {
+  font-size: 24px;
+  font-family: 'Paprika', cursive;
+  margin-bottom: 20px;
+  margin-top: 20px;
+  text-align: center;
+  width: 40%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* who.html */
+
+
+.who-tiles {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  width: 100%;
+  max-width: 1200px;
+  gap: 20px;
+  margin-bottom: 40px;
+  text-align: center;
+}
+
+.who-tiles .image-box {
+  position: relative;
+  text-align: center;
+}
+
+.who-tiles .image-box img {
+  width: 375px;
+  height: 375px;
+  border-radius: 8px;
+}
+
+.who-tiles .button1 {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  padding-top: 40%;
+  background-image: url(../images/reef2.png);
+  background-position: center;
+  color: white;
+  border-radius: 5px;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 48px;
+  font-family: 'Paprika', cursive;
+  width: 100%;
+  height: 100%;
+}
+
+.who-tiles .button2 {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  padding-top: 40%;
+  background-image: url(../images/gift2.png);
+  background-position: center;
+  color: white;
+  border-radius: 5px;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 48px;
+  font-family: 'Paprika', cursive;
+  width: 100%;
+  height: 100%;
+}
+
+.who-tiles .button3 {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  padding-top: 40%;
+  background-image: url(../images/direct2.png);
+  background-position: center;
+  color: white;
+  border-radius: 5px;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 48px;
+  font-family: 'Paprika', cursive;
+  width: 100%;
+  height: 100%;
+}
+
+.who-tiles .button1:hover {
+  background-color: transparent;
+  opacity: 0%;
+}
+.who-tiles .button2:hover {
+  background-color: transparent;
+  opacity: 0%;
+}
+.who-tiles .button3:hover {
+  background-color: transparent;
+  opacity: 0%;
+}
+
+
+/* Our Team Section Styles */
+.our-team {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  text-align: center;
+  background-color: #f5f5f5;
+  padding: 16px;
+  width: 100%;
+}
+
+.our-team h2 {
+  font-family: 'Paprika', sans-serif;
+  font-size: 24px;
+  color: #34687F;
+  margin-bottom: 16px;
+  margin-top: 16px;
+}
+
+.team-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  width: 35%;
+  gap: 20px;
+}
+
+.team-member {
+  background: #ffffff;
+  border: 1px solid #98B1A7;
+  border-radius: 8px;
+  padding: 1rem;
+  width: 200px;
+  text-align: center;
+}
+
+.team-member img {
+  width: 100px;
+  height: 100px;
+  border-radius: 15%;
+  margin-bottom: 0.5rem;
+  border: solid 2px black;
+}
+
+.team-member h3 {
+  font-family: 'Mulish', sans-serif;
+  font-size: 18px;
+  color: #34687F;
+  margin-bottom: 0.25rem;
+}
+
+.team-member p {
+  font-family: 'Mulish', sans-serif;
+  font-size: 14px;
+  color: #707070;
+  margin-bottom: 0.5rem;
+}
+
+.team-member a img {
+  width: 24px;
+  height: 24px;
 }
