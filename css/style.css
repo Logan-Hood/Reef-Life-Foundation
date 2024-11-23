@@ -507,6 +507,8 @@ h3 {
 }
 
 .home-hero h1 {
+  position: absolute;
+  left: 0;
   font-size: 48px;
   font-family: 'Paprika', cursive;
   color: #ffffff;
@@ -525,6 +527,8 @@ h3 {
 }
 
 .impact-hero h1 {
+  position: absolute;
+  left: 0;
   font-size: 48px;
   font-family: 'Paprika', cursive;
   color: #ffffff;
@@ -543,6 +547,8 @@ h3 {
 }
 
 .project-hero h1 {
+  position: absolute;
+  left: 0;
   font-size: 48px;
   font-family: 'Paprika', cursive;
   color: #ffffff;
@@ -562,6 +568,8 @@ h3 {
 }
 
 .who-hero h1 {
+  position: absolute;
+  left: 0;
   font-size: 48px;
   font-family: 'Paprika', cursive;
   color: #ffffff;
@@ -580,6 +588,8 @@ h3 {
 }
 
 .mission-hero h1 {
+  position: absolute;
+  left: 0;
   font-size: 48px;
   font-family: 'Paprika', cursive;
   color: #ffffff;
@@ -598,6 +608,8 @@ h3 {
 }
 
 .partners-hero h1 {
+  position: absolute;
+  left: 0;
   font-size: 48px;
   font-family: 'Paprika', cursive;
   color: #ffffff;
@@ -616,6 +628,8 @@ h3 {
 }
 
 .contact-hero h1 {
+  position: absolute;
+  left: 0;
   font-size: 48px;
   font-family: 'Paprika', cursive;
   color: #ffffff;
@@ -634,6 +648,8 @@ h3 {
 }
 
 .intel-hero h1 {
+  position: absolute;
+  left: 0;
   font-size: 48px;
   font-family: 'Paprika', cursive;
   color: #ffffff;
@@ -652,6 +668,8 @@ h3 {
 }
 
 .reef-hero h1 {
+  position: absolute;
+  left: 0;
   font-size: 48px;
   font-family: 'Paprika', cursive;
   color: #ffffff;
@@ -670,6 +688,8 @@ h3 {
 }
 
 .direct-hero h1 {
+  position: absolute;
+  left: 0;
   font-size: 48px;
   font-family: 'Paprika', cursive;
   color: #ffffff;
@@ -688,6 +708,8 @@ h3 {
 }
 
 .donate-hero h1 {
+  position: absolute;
+  left: 0;
   font-size: 48px;
   font-family: 'Paprika', cursive;
   color: #ffffff;
@@ -706,6 +728,8 @@ h3 {
 }
 
 .gift-hero h1 {
+  position: absolute;
+  left: 0;
   font-size: 48px;
   font-family: 'Paprika', cursive;
   color: #ffffff;
@@ -724,6 +748,8 @@ h3 {
 }
 
 .thanks-hero h1 {
+  position: absolute;
+  left: 0;
   font-size: 48px;
   font-family: 'Paprika', cursive;
   color: #ffffff;
@@ -742,6 +768,8 @@ h3 {
 }
 
 .cart-hero h1 {
+  position: absolute;
+  left: 0;
   font-size: 48px;
   font-family: 'Paprika', cursive;
   color: #ffffff;
@@ -760,6 +788,8 @@ h3 {
 }
 
 .blog-hero h1 {
+  position: absolute;
+  left: 0;
   font-size: 48px;
   font-family: 'Paprika', cursive;
   color: #ffffff;
@@ -778,6 +808,8 @@ h3 {
 }
 
 .podcast-hero h1 {
+  position: absolute;
+  left: 0;
   font-size: 48px;
   font-family: 'Paprika', cursive;
   color: #ffffff;
@@ -796,6 +828,8 @@ h3 {
 }
 
 .media-hero h1 {
+  position: absolute;
+  left: 0;
   font-size: 48px;
   font-family: 'Paprika', cursive;
   color: #ffffff;
@@ -922,7 +956,9 @@ h3 {
   background-color: transparent;
   opacity: 0%;
 }
-  /* About Section */
+
+
+/* About Section */
   .about-section {
     padding: 40px;
     color: white;
@@ -987,6 +1023,7 @@ h3 {
 
 .impact-tiles .image-box {
   position: relative;
+  text-align: center;
 }
 
 .impact-tiles .image-box img {
@@ -1101,6 +1138,9 @@ h3 {
 .donate-btn:hover, .subscribe-box2 button:hover {
   background-color: #98B1A7; /* Hover color */
 }
+
+
+
 
 @media (max-width: 768px) {
   .impact-bottom {
@@ -1407,7 +1447,7 @@ h3 {
   left: 50%;
   transform: translateX(-50%);
   padding-top: 40%;
-  background-image: url(../images/reef2.png);
+  background-image: url(../images/partners2.png);
   background-position: center;
   color: white;
   border-radius: 5px;
@@ -1424,7 +1464,7 @@ h3 {
   left: 50%;
   transform: translateX(-50%);
   padding-top: 40%;
-  background-image: url(../images/gift2.png);
+  background-image: url(../images/mission1.png);
   background-position: center;
   color: white;
   border-radius: 5px;
@@ -1441,7 +1481,7 @@ h3 {
   left: 50%;
   transform: translateX(-50%);
   padding-top: 40%;
-  background-image: url(../images/direct2.png);
+  background-image: url(../images/contact2.png);
   background-position: center;
   color: white;
   border-radius: 5px;
@@ -1529,4 +1569,563 @@ h3 {
 .team-member a img {
   width: 24px;
   height: 24px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* mission.html */
+
+/* Mission and Goal Section */
+.mission-goal {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+  padding: 2rem;
+  background-color: #f5f5f5;
+}
+
+.mission, .goal {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  width: 70%;
+}
+
+.text-box {
+  padding: 1rem;
+}
+
+.text-box h2 {
+  font-family: 'Paprika', sans-serif;
+  font-size: 24px;
+  color: #34687F;
+  margin-bottom: 0.5rem;
+}
+
+.text-box p {
+  font-family: 'Mulish', sans-serif;
+  font-size: 16px;
+  color: #000000;
+  line-height: 1.6;
+}
+
+.image-box img {
+  width: 100%;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Values Section */
+.values {
+  padding: 2rem;
+  background-color: #ffffff;
+}
+
+.values h2 {
+  font-family: 'Paprika', sans-serif;
+  font-size: 24px;
+  color: #34687F;
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+.values ul {
+  list-style: none;
+  padding: 0;
+}
+
+.values li {
+  font-family: 'Mulish', sans-serif;
+  font-size: 16px;
+  color: #000000;
+  margin-bottom: 1rem;
+  line-height: 1.6;
+}
+
+.values li strong {
+  color: #34687F;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* partners.html */
+
+
+.special-thanks p {
+  text-align: center;
+  font-size: 20px;
+  font-family: 'Mulish', sans-serif;
+  width: 100%;
+}
+
+.our-collaborators {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  flex-direction: column;
+}
+
+.our-partners {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  flex-direction: column;
+}
+
+
+.our-collaborators h2 {
+  margin-top: 24px;
+  margin-bottom: 24px;
+  font-size: 24px;
+}
+
+.our-partners h2 {
+  margin-top: 24px;
+  margin-bottom: 24px;
+  font-size: 24px;
+}
+
+
+.our-collaborators img {
+  width: 100%;
+}
+
+.our-partners img {
+  width: 100%;
+  margin-bottom: 48px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* contact.html */
+
+.contact-page {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  padding: 2rem;
+  background-color: #F5F5F5;
+}
+
+.contact-form {
+  flex: 1 1 45%;
+  background-color: #F29755;
+  padding: 1.5rem;
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.contact-form h2 {
+  font-family: 'Paprika', sans-serif;
+  font-size: 20px;
+  color: #000000;
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+.contact-form form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.contact-form input, 
+.contact-form textarea {
+  padding: 0.75rem;
+  font-family: 'Mulish', sans-serif;
+  font-size: 16px;
+  border: 1px solid #C8715B;
+  border-radius: 4px;
+}
+
+.contact-form button {
+  background-color: #34687F;
+  color: #FFFFFF;
+  font-family: 'Mulish', sans-serif;
+  font-size: 20px;
+  border: none;
+  border-radius: 4px;
+  padding: 0.75rem 1.5rem;
+  cursor: pointer;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.contact-form button:hover {
+  background-color: #98B1A7;
+}
+
+.contact-form .form-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.contact-form .form-footer label {
+  font-family: 'Mulish', sans-serif;
+  font-size: 20px;
+  color: #000000;
+}
+
+
+/* Contact Info Section */
+.contact-info {
+  flex: 1 1 45%;
+}
+
+.contact-info .info-container {
+  padding: 1.5rem;
+}
+
+.contact-info h3 {
+  font-family: 'Paprika', sans-serif;
+  font-size: 20px;
+  color: #34687F;
+  margin-bottom: 1rem;
+}
+
+.contact-info .social-links {
+  display: flex;
+  gap: 1rem;
+  margin-bottom: 1.5rem;
+}
+
+.contact-info .social-links img {
+  width: 32px;
+  height: 32px;
+}
+
+.contact-info address {
+  font-family: 'Mulish', sans-serif;
+  font-size: 16px;
+  color: #000000;
+  line-height: 1.6;
+  margin-bottom: 1.5rem;
+}
+
+.contact-info .recognition {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.contact-info .recognition img {
+  width: 150px;
+  height: auto;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* intel.html or IntelliReefs page */
+
+.contact-btn2 {
+  background-color: #C8715B;
+  color: #fff;
+  border: none;
+  padding: 10px 30px;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  border-radius: 4px;
+  margin-bottom: 20px;
+  margin-top: 20px;
+  width: 40%;
+}
+
+.contact-btn2:hover {
+  background-color: #F29755; /* Hover color */
+}
+
+.donate-btn2 {
+  background-color: #34687F;
+  color: #fff;
+  border: none;
+  padding: 10px 30px;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  border-radius: 4px;
+  margin-bottom: 40px;
+  margin-top: 20px;
+  width: 40%;
+}
+
+.donate-btn2:hover {
+  background-color: #98B1A7; /* Hover color */
+}
+
+
+.intelli-container {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  gap: 40px;
+}
+
+.contact-intelli img {
+  max-width: 500px;
+  width: 100%;
+}
+
+.donate-intelli img {
+  max-width: 500px;
+  width: 100%;
+}
+
+.contact-intelli p {
+  max-width: 500px;
+  width: 100%;
+  font-family: 'Mulish', sans-serif;
+  font-size: 16px;
+  color: #000000; /* Neutral gray for readability */
+  line-height: 1.6;
+  margin-bottom: 1rem;
+}
+
+.donate-intelli p {
+  max-width: 500px;
+  width: 100%;
+  font-family: 'Mulish', sans-serif;
+  font-size: 16px;
+  color: #000000; /* Neutral gray for readability */
+  line-height: 1.6;
+  margin-bottom: 1rem;
+}
+
+.contact-intelli h1 {
+  font-family: 'Paprika', sans-serif;
+  font-size: 32px;
+  color: #34687F; /* Dark blue */
+  margin-bottom: 1.5rem;
+  text-align: center;
+}
+
+.donate-intelli h1 {
+  font-family: 'Paprika', sans-serif;
+  font-size: 32px;
+  color: #34687F; /* Dark blue */
+  margin-bottom: 1.5rem;
+  text-align: center;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Section Styling */
+.content-section {
+  padding: 2rem;
+  background-color: #F5F5F5; /* Light gray background */
+  margin: 2rem auto;
+  max-width: 800px; /* Keeps content centered and readable */
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+}
+
+.content-section h2 {
+  font-family: 'Paprika', sans-serif;
+  font-size: 32px;
+  color: #34687F; /* Dark blue */
+  margin-bottom: 1.5rem;
+  text-align: center;
+}
+
+.content-section p {
+  font-family: 'Mulish', sans-serif;
+  font-size: 16px;
+  color: #000000; /* Neutral gray for readability */
+  line-height: 1.6;
+  margin-bottom: 1rem;
+}
+
+.video-container {
+  margin-top: 2rem;
+  text-align: center;
+}
+
+.video-container iframe {
+  width: 100%;
+  max-width: 720px;
+  height: 405px; /* 16:9 aspect ratio */
+  border: none;
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Subtle shadow for the video */
+}
+
+
+
+
+/* Fostering Growth Section */
+#fostering-growth {
+  padding: 2rem;
+  background-color: #f5f5f5; /* White background for contrast */
+  margin: 2rem auto;
+  max-width: 800px;
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+}
+
+#fostering-growth h2 {
+  font-family: 'Paprika', sans-serif;
+  font-size: 32px;
+  color: #34687F; /* Dark blue */
+  margin-bottom: 1.5rem;
+  text-align: center;
+}
+
+#fostering-growth p {
+  font-family: 'Mulish', sans-serif;
+  font-size: 16px;
+  color: #000000; /* Neutral gray for text */
+  line-height: 1.6;
+  margin-bottom: 2rem;
+  text-align: center;
+}
+
+.image-container {
+  text-align: center;
+}
+
+.image-container img {
+  max-width: 100%; /* Ensures responsiveness */
+  height: auto; /* Maintains aspect ratio */
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Subtle shadow for the image */
 }
