@@ -120,12 +120,33 @@ document.querySelector('.subscribe-btn').addEventListener('click', () => {
     alert(`Thank you for subscribing! We'll keep you updated at ${emailInput}`);
   });
   
-  // Donate button functionality
+
+
+
+
+
+
+
+
+
+
+
+  // Various Donate and Contact button functionality
+
+
   document.querySelector('.donate-btn').addEventListener('click', () => {
-    // Navigate to a donation page or trigger donation modal
-    window.location.href = 'donate.html'; // Replace with the actual donation page link
+    window.location.href = 'donate.html';
   });
   
+
+
+
+
+
+
+
+
+
 
 
 
@@ -201,29 +222,73 @@ document.addEventListener("DOMContentLoaded", () => {
 const slides = document.querySelectorAll('.form-slide');
 const nextBtn = document.querySelector('.next-btn');
 const paymentOptions = document.querySelectorAll('.payment-banner');
-const submitForm = document.getElementById('donation-form');
+const freqBtns = document.querySelectorAll('.freq-btn');
+const customAmountInput = document.getElementById('custom-input');
+const customAmountRadio = document.getElementById('custom-amount');
+const form = document.getElementById('donation-form');
 
-// Handle Next Button
-nextBtn.addEventListener('click', () => {
-  slides[0].classList.remove('active');
-  slides[1].classList.add('active');
+let currentSlide = 0;
+
+// Handle Frequency Button Selection
+freqBtns.forEach((btn) => {
+  btn.addEventListener('click', () => {
+    freqBtns.forEach((b) => b.classList.remove('active'));
+    btn.classList.add('active');
+  });
 });
 
-// Handle Payment Options
-paymentOptions.forEach(option => {
-  option.addEventListener('click', (e) => {
-    if (e.target.id === 'credit-card') {
-      slides[1].classList.remove('active');
-      slides[2].classList.add('active');
+// Enable Custom Amount Input
+customAmountRadio.addEventListener('change', () => {
+  customAmountInput.disabled = !customAmountRadio.checked;
+});
+
+// Move to Next Slide
+nextBtn.addEventListener('click', () => {
+  if (validateSlide1()) {
+    moveToSlide(1);
+  }
+});
+
+// Handle Payment Option Selection
+paymentOptions.forEach((option) => {
+  option.addEventListener('click', () => {
+    if (option.id === 'credit-card') {
+      moveToSlide(2);
+    } else {
+      alert('This payment method is not yet implemented.');
     }
   });
 });
 
-// Handle Form Submission
-submitForm.addEventListener('submit', (e) => {
+// Submit Form
+form.addEventListener('submit', (e) => {
   e.preventDefault();
-  window.location.href = 'thanks.html';
+  alert('Thank you for your donation!');
+  form.reset();
+  moveToSlide(0);
 });
+
+// Move Between Slides
+function moveToSlide(slideIndex) {
+  slides[currentSlide].classList.remove('active');
+  slides[slideIndex].classList.add('active');
+  currentSlide = slideIndex;
+}
+
+// Validate Slide 1
+function validateSlide1() {
+  const selectedAmount = document.querySelector('input[name="amount"]:checked');
+  if (!selectedAmount) {
+    alert('Please select a donation amount.');
+    return false;
+  }
+  if (selectedAmount.value === 'custom' && customAmountInput.value === '') {
+    alert('Please enter a custom amount.');
+    return false;
+  }
+  return true;
+}
+
 
 
 

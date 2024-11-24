@@ -1135,7 +1135,7 @@ h3 {
   border-radius: 4px;
 }
 
-.donate-btn:hover, .subscribe-box2 button:hover {
+.donate-btn:hover {
   background-color: #98B1A7; /* Hover color */
 }
 
@@ -1957,8 +1957,6 @@ h3 {
   font-weight: bold;
   cursor: pointer;
   border-radius: 4px;
-  margin-bottom: 20px;
-  margin-top: 20px;
   width: 40%;
 }
 
@@ -1975,8 +1973,6 @@ h3 {
   font-weight: bold;
   cursor: pointer;
   border-radius: 4px;
-  margin-bottom: 40px;
-  margin-top: 20px;
   width: 40%;
 }
 
@@ -2391,6 +2387,7 @@ h3 {
   text-align: center;
   padding: 40px 20px;
   background-color: #F5F5F5; /* Light background */
+  width: 100%;
 }
 
 .final-title {
@@ -2408,33 +2405,41 @@ h3 {
   margin-bottom: 30px;
 }
 
-.contact-btn3, .donate-btn3 {
-  font-family: 'Mulish', sans-serif;
-  font-size: 16px;
-  padding: 12px 24px;
+
+.donate-btn3 {
+  background-color: #34687F;
+  color: #fff;
   border: none;
-  border-radius: 8px;
+  padding: 10px 30px;
+  font-size: 16px;
+  font-weight: bold;
   cursor: pointer;
-  transition: background-color 0.3s ease;
+  border-radius: 4px;
+  width: 200px;
 }
 
+.donate-btn3:hover {
+  background-color: #98B1A7; /* Hover color */
+}
+
+
 .contact-btn3 {
-  background-color: #C8715B; /* Coral */
-  color: #FFFFFF;
+  background-color: #C8715B;
+  color: #fff;
+  border: none;
+  padding: 10px 30px;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  border-radius: 4px;
+  width: 200px;
 }
 
 .contact-btn3:hover {
   background-color: #F29755; /* Orange */
 }
 
-.donate-btn3 {
-  background-color: #34687F; /* Blue */
-  color: #FFFFFF;
-}
 
-.donate-btn3:hover {
-  background-color: #98B1A7; /* Teal green */
-}
 
 /* Images Row Styling */
 .image-row {
@@ -2445,7 +2450,7 @@ h3 {
 }
 
 .image-row img {
-  width: 150px;
+  width: 250px;
   height: auto;
   border-radius: 8px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
@@ -2774,15 +2779,59 @@ h3 {
   margin: 2rem auto;
   max-width: 1200px;
   text-align: center;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
 }
 
 #blog .blog-header p {
   font-family: 'Mulish', sans-serif;
-  font-size: 16px;
+  font-size: 20px;
   color: #000000;
   line-height: 1.6;
   margin-bottom: 2rem;
 }
+
+#blog .subscribe-box2 {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 10px;
+  width: 50%;
+}
+
+#blog .subscribe-box2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+#blog .subscribe-box2 input {
+  padding: 10px;
+  font-size: 14px;
+  border: 1px solid #98B1A7;
+  border-radius: 4px;
+}
+
+#blog .subscribe-box2 button {
+  background-color: #F29755;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  border-radius: 4px;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+#blog .subscribe-box2 button:hover {
+  background-color: #C8715B; /* Hover color */
+}
+
 
 /* Blog Grid */
 .blog-grid {
@@ -2790,6 +2839,7 @@ h3 {
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
   gap: 1.5rem;
   margin-top: 2rem;
+  width: 100%;
 }
 
 .blog-tile {
@@ -2798,29 +2848,202 @@ h3 {
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
 }
 
-.blog-tile img {
+.blog-grid .blog-tile {
+  position: relative;
+  text-align: center;
+}
+
+.blog-grid .blog-tile img {
+  width: 250px;
+  height: 250px;
+  object-fit: cover;
+}
+
+.blog-grid .button1 {
+  position: absolute;
+  left: 50%;
+  padding-top: 30%;
+  transform: translateX(-50%);
+  background-image: url(../images/blog4.png);
+  background-position: center;
+  color: white;
+  border-radius: 5px;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 24px;
+  font-family: 'Mulish', sans-serif;
   width: 100%;
-  height: auto;
-  display: block;
-  transition: transform 0.3s ease;
+  height: 100%;
+  text-shadow: 2px 2px #000000;
 }
 
-.blog-tile:hover img {
-  transform: scale(1.05); /* Slight zoom on hover */
+.blog-grid .button1:hover {
+  background-color: transparent;
+  opacity: 0%;
+}
+
+.blog-grid .button2 {
+  position: absolute;
+  left: 50%;
+  padding-top: 30%;
+  transform: translateX(-50%);
+  background-image: url(../images/blog3.png);
+  background-position: center;
+  color: white;
+  border-radius: 5px;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 24px;
+  font-family: 'Mulish', sans-serif;
+  width: 100%;
+  height: 100%;
+  text-shadow: 2px 2px #000000;
+}
+
+.blog-grid .button2:hover {
+  background-color: transparent;
+  opacity: 0%;
+}
+
+.blog-grid .button3 {
+  position: absolute;
+  left: 50%;
+  padding-top: 30%;
+  transform: translateX(-50%);
+  background-image: url(../images/blog5.png);
+  background-position: center;
+  color: white;
+  border-radius: 5px;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 24px;
+  font-family: 'Mulish', sans-serif;
+  width: 100%;
+  height: 100%;
+  text-shadow: 2px 2px #000000;
+}
+
+.blog-grid .button3:hover {
+  background-color: transparent;
+  opacity: 0%;
+}
+
+.blog-grid .button4 {
+  position: absolute;
+  left: 50%;
+  padding-top: 30%;
+  transform: translateX(-50%);
+  background-image: url(../images/blog6.png);
+  background-position: center;
+  color: white;
+  border-radius: 5px;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 24px;
+  font-family: 'Mulish', sans-serif;
+  width: 100%;
+  height: 100%;
+  text-shadow: 2px 2px #000000;
+}
+
+.blog-grid .button4:hover {
+  background-color: transparent;
+  opacity: 0%;
+}
+
+.blog-grid .button5 {
+  position: absolute;
+  left: 50%;
+  padding-top: 30%;
+  transform: translateX(-50%);
+  background-image: url(../images/blog7.png);
+  background-position: center;
+  color: white;
+  border-radius: 5px;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 24px;
+  font-family: 'Mulish', sans-serif;
+  width: 100%;
+  height: 100%;
+  text-shadow: 2px 2px #000000;
+}
+
+.blog-grid .button5:hover {
+  background-color: transparent;
+  opacity: 0%;
+}
+
+.blog-grid .button6 {
+  position: absolute;
+  left: 50%;
+  padding-top: 30%;
+  transform: translateX(-50%);
+  background-image: url(../images/blog8.png);
+  background-position: center;
+  color: white;
+  border-radius: 5px;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 24px;
+  font-family: 'Mulish', sans-serif;
+  width: 100%;
+  height: 100%;
+  text-shadow: 2px 2px #000000;
+}
+
+.blog-grid .button6:hover {
+  background-color: transparent;
+  opacity: 0%;
+}
+
+.blog-grid .button7 {
+  position: absolute;
+  left: 50%;
+  padding-top: 30%;
+  transform: translateX(-50%);
+  background-image: url(../images/blog9.png);
+  background-position: center;
+  color: white;
+  border-radius: 5px;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 24px;
+  font-family: 'Mulish', sans-serif;
+  width: 100%;
+  height: 100%;
+  text-shadow: 2px 2px #000000;
+}
+
+.blog-grid .button7:hover {
+  background-color: transparent;
+  opacity: 0%;
 }
 
 
 
+.blog-grid .button8 {
+  position: absolute;
+  left: 50%;
+  padding-top: 30%;
+  transform: translateX(-50%);
+  background-image: url(../images/blog10.png);
+  background-position: center;
+  color: #ffffff;
+  border-radius: 5px;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 24px;
+  font-family: 'Mulish', sans-serif;
+  width: 100%;
+  height: 100%;
+  text-shadow: 2px 2px #000000;
+}
 
-
-
-
-
-
-
-
-
-
+.blog-grid .button8:hover {
+  background-color: transparent;
+  opacity: 0%;
+}
 
 
 
@@ -2843,10 +3066,11 @@ h3 {
 /*Gift a reef or gift.html*/
 
 /* Gift a Reef Section */
+/* Gift a Reef Section */
 #gift-a-reef {
   display: flex;
-  flex-direction: row;
-  align-items: center;
+  flex-direction: row; /* Default layout: side by side */
+  justify-content: center;
   text-align: center;
   padding: 2rem;
   background-color: #FFFFFF;
@@ -2926,25 +3150,11 @@ h3 {
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 /*Payment Form for reef.html*/
 /* Right Column */
+/* Right Column */
 .right-column {
-  width: 80%;
+  width: 100%;
   min-width: 350px;
   padding: 1rem;
   background-color: #34687F;
@@ -2969,6 +3179,28 @@ h3 {
   color: #ffffff;
   margin-bottom: 1rem;
 }
+
+
+/* Media Query for Smaller Screens */
+@media (max-width: 768px) {
+  #gift-a-reef {
+    flex-direction: column; /* Stack columns vertically */
+    align-items: center; /* Center the stacked items */
+  }
+
+  .left-column,
+  .right-column {
+    width: 100%; /* Full width for stacked layout */
+    margin-bottom: 1rem; /* Add spacing between stacked columns */
+  }
+
+  .right-column {
+    margin-bottom: 0; /* Optional: remove bottom margin for the last item */
+  }
+}
+
+
+/* Payment Form */
 
 /* Frequency Buttons */
 .frequency-buttons {
@@ -2998,8 +3230,7 @@ h3 {
 .amount-options label {
   display: block;
   margin: 20px;
-  padding-top: 15px;
-  padding-bottom: 15px;
+  padding: 15px 0;
   font-size: 18px;
   background-color: #f9f9f9;
 }
@@ -3016,7 +3247,6 @@ h3 {
   color: #FFFFFF;
   border-radius: 15px;
   border: white solid 1px;
-
 }
 
 /* Payment Options */
@@ -3096,15 +3326,14 @@ h3 {
 
 
 
+
 /* Progress Meter */
 .progress-meter {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  margin-top: 2rem;
   padding: 1rem;
-  background-color: #F5F5F5;
   border-radius: 8px;
   text-align: center;
   font-family: 'Mulish', sans-serif;
@@ -3133,19 +3362,6 @@ h3 {
   border-radius: 10px 0 0 10px;
   transition: width 0.5s ease-in-out;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
@@ -3348,8 +3564,11 @@ p {
 
 
 /*donate direct or direct.html */
-#donate-direct {
-  align-items: center;
+/* Container for both columns */
+.both-columns {
+  display: flex;
+  flex-direction: row; /* Default for larger screens */
+  justify-content: center;
   text-align: center;
   padding: 2rem;
   background-color: #FFFFFF;
@@ -3358,19 +3577,68 @@ p {
 }
 
 /* Left Column */
-.thanks-columns {
-  display: flex;
-  flex-direction: row;
-}
-
-
 #donate-direct .left-column {
-  width: 80%;
+  flex: 1; /* Allow columns to share available space equally */
   min-width: 350px;
   padding: 1rem;
   background-color: #ffffff;
   border-radius: 15px;
 }
+
+/* Right Column */
+.right-column2 {
+  flex: 1; /* Equal space as the left column */
+  min-width: 350px;
+  padding: 1rem;
+  background-color: #34687F;
+  border-left: 1px solid #E0E0E0;
+  border-radius: 15px;
+}
+
+.right-column2 h3 {
+  font-family: 'Paprika', sans-serif;
+  font-size: 24px;
+  color: #ffffff;
+  background: #F29755;
+  margin-bottom: 1rem;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  border-radius: 15px;
+}
+
+.right-column2 p {
+  font-family: 'Mulish', sans-serif;
+  font-size: 16px;
+  color: #ffffff;
+  margin-bottom: 1rem;
+}
+
+
+
+
+
+/* Responsive behavior */
+@media (max-width: 768px) {
+  .both-columns {
+    flex-direction: column; /* Stack columns vertically */
+    padding: 1rem;
+  }
+
+  #donate-direct .left-column,
+  .right-column2 {
+    width: 100%; /* Make each column take full width */
+    margin-bottom: 1rem; /* Add spacing between stacked columns */
+    border-radius: 15px;
+  }
+
+  .right-column2 {
+    border-left: none; /* Remove left border when stacked */
+  }
+}
+
+
+
+
 
 #donate-direct .left-column h2 {
   font-family: 'Paprika', sans-serif;
