@@ -155,23 +155,118 @@
         <h1>Ocean Gifts</h1>
     </section>
 
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Gift Shop</title>
+      <link href="css/style.css" rel="stylesheet" type="text/css">
+      <script src="https://code.jquery.com/jquery-3.7.1.js"></script>
+    </head>
+    <body>
+      <!-- Header -->
+      <div class="top-banner">
+        <h1>ALL proceeds go to Building Homes for the Ocean's Homeless!</h1>
+      </div>
+    
+      <!-- Special Offers Section -->
+      <div class = "top-row">
+      <!-- Filter Section -->
+      <aside class="filter">
+        <div class="cart-icon">
+            <img src="images/cart-icon.png" alt="Cart" id="cart-icon">
+            <span id="cart-count">0</span>
+          </div>
+        <h3>Filter By:</h3>
+        <form id="filter-form">
+          <label><input type="radio" name="category" value="all" checked> All Items</label><br>
+          <label><input type="radio" name="category" value="bracelets"> Bracelets</label><br>
+          <label><input type="radio" name="category" value="necklaces"> Necklaces</label><br>
+          <label><input type="radio" name="category" value="earrings"> Earrings</label><br>
+          <label><input type="radio" name="category" value="sets"> Sets</label><br>
+        </form>
+        <button id="checkout">Checkout</button>
+      </aside>
 
+        <section class="special-offers">
+         <h2>Special Offers:</h2>
+            <div class="special-offers-container">
+          <div class="offer-item" data-category="sets">
+            <img src="images/item1.png" alt="Handmade Ocean Pink Set">
+            <p>Handmade Ocean Pink Set</p>
+            <p>$258.00</p>
+            <button class="add-to-cart" data-name="Handmade Ocean Pink Set" data-price="258.00">Add to Cart</button>
+          </div>
+          <div class="offer-item" data-category="necklaces">
+            <img src="images/item2.png" alt="Ocean Love Necklace">
+            <p>Ocean Love Necklace</p>
+            <p>$158.00</p>
+            <button class="add-to-cart" data-name="Ocean Love Necklace" data-price="158.00">Add to Cart</button>
+          </div>
+          <div class="offer-item" data-category="bracelets">
+            <img src="images/item3.png" alt="Ocean Love Pink Opal Bracelet">
+            <p>Ocean Love Pink Opal Bracelet</p>
+            <p>$88.00</p>
+            <button class="add-to-cart" data-name="Ocean Love Pink Opal Bracelet" data-price="88.00">Add to Cart</button>
+          </div>
+        </div>
+      </section>
+    
 
+    </div>
+      <!-- Product Grid -->
+      <main>
+        <div class="product-grid">
+          <div class="product" data-category="bracelets">
+            <img src="images/item4.png" alt="Bracelet 1">
+            <p>Bracelet 1</p>
+            <p>$50.00</p>
+            <button class="add-to-cart" data-name="Bracelet 1" data-price="50.00">Add to Cart</button>
+          </div>
+          <div class="product" data-category="necklaces">
+            <img src="images/item5.png" alt="Necklace 1">
+            <p>Necklace 1</p>
+            <p>$70.00</p>
+            <button class="add-to-cart" data-name="Necklace 1" data-price="70.00">Add to Cart</button>
+          </div>
 
+          <div class="product" data-category="bracelets">
+            <img src="images/item6.png" alt="Bracelet 1">
+            <p>Bracelet 1</p>
+            <p>$50.00</p>
+            <button class="add-to-cart" data-name="Bracelet 1" data-price="50.00">Add to Cart</button>
+          </div>
+          <div class="product" data-category="necklaces">
+            <img src="images/item7.png" alt="Necklace 1">
+            <p>Necklace 1</p>
+            <p>$70.00</p>
+            <button class="add-to-cart" data-name="Necklace 1" data-price="70.00">Add to Cart</button>
+          </div>
 
-
-
-
-
-
-
-
-
-
-
-
-
-
+          <div class="product" data-category="bracelets">
+            <img src="images/item8.png" alt="Bracelet 1">
+            <p>Bracelet 1</p>
+            <p>$50.00</p>
+            <button class="add-to-cart" data-name="Bracelet 1" data-price="50.00">Add to Cart</button>
+          </div>
+          <div class="product" data-category="necklaces">
+            <img src="images/item9.png" alt="Necklace 1">
+            <p>Necklace 1</p>
+            <p>$70.00</p>
+            <button class="add-to-cart" data-name="Necklace 1" data-price="70.00">Add to Cart</button>
+          </div>
+          <div class="product" data-category="necklaces">
+            <img src="images/item10.png" alt="Necklace 1">
+            <p>Necklace 1</p>
+            <p>$70.00</p>
+            <button class="add-to-cart" data-name="Necklace 1" data-price="70.00">Add to Cart</button>
+          </div>
+          <!-- Add more products as necessary -->
+        </div>
+      </main>
+    
+    
 
 </main>
 

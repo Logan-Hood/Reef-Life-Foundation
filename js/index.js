@@ -161,3 +161,187 @@ document.addEventListener("DOMContentLoaded", () => {
     carousel.style.transform = `translateX(-${index * 100}%)`;
   }, 4000); // 4-second intervals
 });
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// payment for on reef.html
+// Form Slide Navigation
+const slides = document.querySelectorAll('.form-slide');
+const nextBtn = document.querySelector('.next-btn');
+const paymentOptions = document.querySelectorAll('.payment-banner');
+const submitForm = document.getElementById('donation-form');
+
+// Handle Next Button
+nextBtn.addEventListener('click', () => {
+  slides[0].classList.remove('active');
+  slides[1].classList.add('active');
+});
+
+// Handle Payment Options
+paymentOptions.forEach(option => {
+  option.addEventListener('click', (e) => {
+    if (e.target.id === 'credit-card') {
+      slides[1].classList.remove('active');
+      slides[2].classList.add('active');
+    }
+  });
+});
+
+// Handle Form Submission
+submitForm.addEventListener('submit', (e) => {
+  e.preventDefault();
+  window.location.href = 'thanks.html';
+});
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// Progress meter
+const progressBar = document.querySelector('.progress-bar');
+const progressText = document.querySelector('.progress-text p');
+
+function updateProgress(current, goal) {
+  const percentage = Math.min((current / goal) * 100, 100).toFixed(0);
+  progressBar.style.width = `${percentage}%`;
+  progressText.textContent = `${percentage}% of $${goal.toLocaleString()} Goal Reached`;
+}
+
+// Example: Update progress to 82% of $80,000
+updateProgress(65600, 80000);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// Gift shop
+
+$(document).ready(function () {
+  let cartCount = 0;
+
+  // Add to Cart Functionality
+  $('.add-to-cart').on('click', function () {
+    cartCount++;
+    $('#cart-count').text(cartCount);
+  });
+
+  // Filter Products
+  $('#filter-form input').on('change', function () {
+    const category = $(this).val();
+    $('.product').show();
+    if (category !== 'all') {
+      $('.product').not(`[data-category="${category}"]`).hide();
+    }
+  });
+});
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// shopping cart
+
+document.addEventListener("DOMContentLoaded", () => {
+  const cartItems = document.querySelectorAll(".cart-item");
+  const totalPriceEl = document.getElementById("total-price");
+
+  function calculateTotal() {
+    let total = 0;
+    cartItems.forEach((item) => {
+      const price = parseFloat(item.querySelector(".item-details p:nth-child(2)").textContent.slice(7));
+      const qty = parseInt(item.querySelector(".quantity input").value);
+      total += price * qty;
+    });
+    totalPriceEl.textContent = `$${total.toFixed(2)}`;
+  }
+
+  // Update Total on Quantity Change
+  cartItems.forEach((item) => {
+    item.querySelector(".quantity input").addEventListener("input", calculateTotal);
+  });
+
+  // Remove Item from Cart
+  cartItems.forEach((item) => {
+    item.querySelector(".remove-item").addEventListener("click", () => {
+      item.remove();
+      calculateTotal();
+    });
+  });
+});

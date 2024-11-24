@@ -155,7 +155,82 @@
         <h1>Shopping Cart</h1>
     </section>
 
-
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Checkout</title>
+      <link href="css/style.css" rel="stylesheet" type="text/css">
+    </head>
+    <body>
+      <!-- Cart Section -->
+      <section class="cart-summary">
+        <h2>Check Out</h2>
+        <div class="cart-item">
+          <img src="images/item1.png" alt="Handmade Ocean Pink Set">
+          <div class="item-details">
+            <p>Handmade Ocean Pink LOVE SET: Opal & Amethyst with Copper Coral Charms</p>
+            <p>Price: $258.00</p>
+            <div class="quantity">
+              <label for="item1-qty">Qty:</label>
+              <input type="number" id="item1-qty" value="1" min="1">
+            </div>
+          </div>
+          <button class="remove-item">Remove</button>
+        </div>
+        <div class="cart-item">
+          <img src="images/item2.png" alt="Ocean Love Necklace Coral Bronze Heart">
+          <div class="item-details">
+            <p>Ocean Love Necklace Coral Bronze Heart</p>
+            <p>Price: $158.00</p>
+            <div class="quantity">
+              <label for="item2-qty">Qty:</label>
+              <input type="number" id="item2-qty" value="1" min="1">
+            </div>
+          </div>
+          <button class="remove-item">Remove</button>
+        </div>
+        <div class="cart-item">
+          <img src="images/item3.png" alt="Ocean Love Pink Opal Bracelet">
+          <div class="item-details">
+            <p>Ocean Love Pink Opal Bracelet</p>
+            <p>Price: $88.00</p>
+            <div class="quantity">
+              <label for="item3-qty">Qty:</label>
+              <input type="number" id="item3-qty" value="1" min="1">
+            </div>
+          </div>
+          <button class="remove-item">Remove</button>
+        </div>
+    
+        <!-- Complimentary Gift Wrap -->
+        <div class="gift-wrap">
+          <input type="checkbox" id="gift-wrap">
+          <label for="gift-wrap">Add complimentary gift wrap</label>
+        </div>
+    
+        <!-- Total Price -->
+        <div class="cart-total">
+          <p>Total: <span id="total-price">$504.00</span></p>
+        </div>
+      </section>
+    
+      <!-- Payment Section -->
+      <section class="payment-section">
+        <h2>Choose a payment option:</h2>
+        <div class="payment-options">
+          <button class="paypal">Donate with PayPal</button>
+          <button class="venmo">Venmo</button>
+          <button class="credit-card">Credit/Debit Card</button>
+          <button class="bank-transfer">Bank Transfer</button>
+        </div>
+      </section>
+    
+      <script src="js/script.js"></script>
+    </body>
+    </html>
+    
 
 
 
