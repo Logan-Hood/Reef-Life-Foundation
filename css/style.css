@@ -3437,15 +3437,13 @@ p {
 .top-banner {
   display: flex;
   justify-content: center;
-  padding: 1rem;
-  background-color: #34687f;
-  color: white;
   width: 100%;
+  margin-bottom: 20px;
 }
 
 .top-banner h1 {
   font-size: 24px;
-  color: #ffffff;
+  color: #000000;
 }
 
 .top-row {
@@ -3534,7 +3532,15 @@ p {
   padding: 1rem;
   background: #34687f;
   color: white;
+  padding-left: 48px;
+  padding-right: 48px;
 }
+
+#filter-form {
+  display: flex;
+  flex-direction: column;
+}
+
 
 #checkout {
   background: #f29755;
@@ -3549,6 +3555,7 @@ p {
 .cart-icon {
   position: relative;
   margin-bottom: 40px;
+  margin-top: 20px;
 }
 
 .cart-icon img {
@@ -3594,7 +3601,7 @@ p {
 
 
 
-/* car.html or shopping cart page */
+/* cart.html or shopping cart page */
 
 /* General Styles */
 h1, h2 {
