@@ -3200,113 +3200,6 @@ h3 {
 }
 
 
-/* Payment Form */
-
-/* Frequency Buttons */
-.frequency-buttons {
-  display: flex;
-  gap: 1rem;
-  margin-bottom: 1rem;
-}
-
-.freq-btn {
-  flex: 1;
-  padding: 0.5rem;
-  font-size: 16px;
-  background: transparent;
-  border: 3px solid #ffffff;
-  color: #FFFFFF;
-  border-radius: 4px;
-  cursor: pointer;
-}
-
-.freq-btn.active {
-  background: #98B1A7;
-  color: #FFFFFF;
-  border-color: #ffffff;
-}
-
-/* Amount Options */
-.amount-options label {
-  display: block;
-  margin: 20px;
-  padding: 15px 0;
-  font-size: 18px;
-  background-color: #f9f9f9;
-}
-
-.amount-options input[type="radio"] {
-  margin-right: 0.5rem;
-}
-
-.next-btn {
-  background-color: #F29755;
-  padding: 16px;
-  font-size: 16px;
-  width: 20%;
-  color: #FFFFFF;
-  border-radius: 15px;
-  border: white solid 1px;
-}
-
-/* Payment Options */
-.payment-options {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 1rem;
-}
-
-.payment-banner {
-  flex: 1;
-  padding: 1rem;
-  text-align: center;
-  background: #F5F5F5;
-  border: 1px solid #CCC;
-  border-radius: 4px;
-  cursor: pointer;
-  transition: background-color 0.3s ease, transform 0.3s ease;
-}
-
-.payment-banner:hover {
-  background: #34687F;
-  color: #FFFFFF;
-  transform: scale(1.05);
-}
-
-.payment-banner#credit-card {
-  border: 2px solid #F29755;
-}
-
-/* Form Slides */
-.form-slide {
-  display: none;
-}
-
-.form-slide.active {
-  display: block;
-}
-
-/* Form Fields */
-.form-group {
-  margin-bottom: 1rem;
-}
-
-.form-group input {
-  width: 100%;
-  padding: 0.5rem;
-  border: 1px solid #CCC;
-  border-radius: 4px;
-}
-
-/* Submit Button */
-.submit-btn {
-  padding: 0.75rem 1.5rem;
-  background: #F29755;
-  color: #FFFFFF;
-  border: none;
-  border-radius: 4px;
-  cursor: pointer;
-}
 
 
 
@@ -3835,6 +3728,11 @@ p {
   cursor: pointer;
 }
 
+#checkout:hover {
+  background: #C8715B;
+}
+
+
 .cart-icon {
   position: relative;
   margin-bottom: 20px;
@@ -3994,10 +3892,8 @@ p {
 /* payment form content */
 
 .payment-options button {
-  background-color: #f29755;
   border: none;
   color: white;
-  padding: 0.5rem 1rem;
   margin: 0.5rem;
   border-radius: 8px;
   font-size: 16px;
@@ -4119,4 +4015,313 @@ form button.subscribe-btn:hover {
 
 .impact-btn:hover {
   background-color: #98B1A7;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* General Styles */
+
+/* Orange Banner */
+.orange-banner {
+  background-color: #F29755;
+  text-align: center;
+  padding: 15px;
+  border-radius: 8px 8px 0 0;
+  width: 100%;
+}
+
+.orange-banner h1 {
+  margin: 0;
+  font-size: 24px;
+  color: white;
+}
+
+/* Donation Info */
+.donation-info {
+  text-align: center;
+  margin: 20px 0;
+  font-size: 16px;
+}
+
+/* Frequency Buttons */
+.donation-frequency {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.frequency-btn {
+  background-color: #7AA6EA;
+  color: #FFFFFF;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.frequency-btn:hover {
+  background-color: #34687F;
+}
+
+/* Donation Form */
+.donation-form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  margin-bottom: 20px;
+}
+
+.donation-form label {
+  background-color: #FFFFFF;
+  color: #000000;
+  padding: 10px;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.donation-form input[type="radio"] {
+  accent-color: #F29755;
+}
+
+.custom-input {
+  border: 1px solid #000000;
+  border-radius: 5px;
+  padding: 5px;
+  margin-top: 5px;
+  width: 100%;
+}
+
+/* Next Button */
+.next-btn {
+  background-color: #F29755;
+  color: #FFFFFF;
+  border: none;
+  padding: 12px 20px;
+  border-radius: 8px;
+  font-size: 16px;
+  cursor: pointer;
+  display: block;
+  margin: 0 auto;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+}
+
+.next-btn:hover {
+  background-color: #C8715B;
+}
+
+
+
+
+
+
+/* slide 2 */
+.carousel-slide2 {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #34687F;
+}
+
+
+/* Content Area Styling */
+.content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  margin-top: 40px;
+}
+
+.content p {
+  font-family: 'Mulish', sans-serif;
+  font-size: 18px;
+  color: #FFFFFF;
+}
+
+/* Payment Buttons Styling */
+.payment-options {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 15px;
+  width: 80%;
+}
+
+.payment-btn {
+  width: 100%;
+  background-color: #34687F;
+  border: none;
+  cursor: pointer;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.payment-btn img {
+  width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 10px;
+}
+
+.payment-btn:hover {
+  transform: scale(1.05);
+  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.2);
+}
+
+
+
+
+
+/* Slide 3 */
+
+/* General Slide Styling */
+/* Carousel Slide 3 */
+.carousel-slide3 {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #34687F;
+}
+
+.carousel-slide3 .orange-banner{
+  margin-bottom: 8px;
+}
+
+/* Form Container */
+.form-container {
+  background-color: #FFFFFF;
+  border-radius: 10px;
+  padding: 12px;
+  width: 90%;
+  max-width: 350px;
+}
+
+.form-container form {
+  display: flex;
+  flex-direction: column;
+}
+
+
+/* Form Label Styling */
+.form-container label {
+  font-family: 'Mulish', sans-serif;
+  font-size: 16px;
+  font-weight: bold;
+  color: #233C6C;
+  margin-bottom: 10px;
+  display: block;
+}
+
+/* Input Styling */
+.form-container input {
+  font-family: 'Mulish', sans-serif;
+  font-size: 14px;
+  padding-left: 10px;
+  border: 1px solid #979797;
+  border-radius: 5px;
+  width: 100%;
+  margin-bottom: 15px;
+  box-sizing: border-box;
+}
+
+.form-container input::placeholder {
+  color: #979797;
+}
+
+/* Form Row */
+.form-row {
+  display: flex;
+  gap: 10px;
+  flex-direction: row;
+}
+  
+.form-row input {
+  flex: 1;
+  min-width: 45%;
+  width: 100%;
+}
+
+.row1, .row2, .row3 label {
+  text-align: left;
+}
+
+
+/* Radio Group */
+.radio-group {
+  display: flex;
+  align-items: center;
+  margin-bottom: 4px;
+  width: 100%;
+}
+
+.radio-group input[type="radio"] {
+  accent-color: #F29755;
+}
+
+.radio-group label {
+  font-family: 'Mulish', sans-serif;
+  font-size: 14px;
+  color: #F29755;
+  width: 100%;
+  text-align: left;
+}
+
+/* Submit Button */
+.submit-btn {
+  background-color: #F29755;
+  color: #FFFFFF;
+  font-family: 'Paprika', sans-serif;
+  font-size: 18px;
+  padding: 15px;
+  width: 100%;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.submit-btn:hover {
+  background-color: #C8715B;
+  transform: scale(1.05);
 }

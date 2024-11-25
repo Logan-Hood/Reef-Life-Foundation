@@ -186,105 +186,120 @@
 
          <!-- Right Column -->
          <div class="right-column2">
-          <form id="donation-form">
-            <!-- Slide 1 -->
-            <div class="form-slide active" id="slide1">
-              <h3>Choose Amount</h3>
-              <p>Gift a Reef! $100 Donation = 4 Ocean Homes Built for Homeless Ocean Species.</p>
-        
-              <!-- Frequency Buttons -->
-              <div class="frequency-buttons">
-                <button type="button" class="freq-btn active" data-frequency="One-time">One-time</button>
-                <button type="button" class="freq-btn" data-frequency="Quarterly">Quarterly</button>
-                <button type="button" class="freq-btn" data-frequency="Annually">Annually</button>
-              </div>
-        
-              <!-- Amount Options -->
-              <div class="amount-options">
-                <label><input type="radio" name="amount" value="25"> $25 - 1 Ocean Garden Habitat</label>
-                <label><input type="radio" name="amount" value="50"> $50 - 2 Ocean Garden Habitat</label>
-                <label><input type="radio" name="amount" value="100" checked> $100 - 4 Ocean Garden Habitat</label>
-                <label><input type="radio" name="amount" value="250"> $250 - 10 Ocean Garden Habitat</label>
-                <label><input type="radio" name="amount" value="custom" id="custom-amount"> Custom Amount:
-                  <input type="number" id="custom-input" min="1" disabled>
+          <div class="carousel-slide" id="slide-1">
+            <div class="orange-banner">
+                <h1>Choose Donation Amount</h1>
+            </div>
+            <div class="donation-info">
+                <p>Gift a Reef! $100 Donation = 4 Ocean Homes Built for Homeless Ocean Species</p>
+            </div>
+            <div class="donation-frequency">
+                <button class="frequency-btn" id="one-time">One Time</button>
+                <button class="frequency-btn" id="quarterly">Quarterly</button>
+                <button class="frequency-btn" id="annually">Annually</button>
+            </div>
+            <form class="donation-form">
+                <label>
+                    <input type="radio" name="donation-amount" value="25">
+                    <span>$25</span> - 1 Ocean Garden Habitat
                 </label>
-              </div>
-        
-              <button type="button" class="next-btn">Next</button>
+                <label>
+                    <input type="radio" name="donation-amount" value="50">
+                    <span>$50</span> - 2 Ocean Garden Habitats
+                </label>
+                <label>
+                    <input type="radio" name="donation-amount" value="100">
+                    <span>$100</span> - 4 Ocean Garden Habitats
+                </label>
+                <label>
+                    <input type="radio" name="donation-amount" value="custom">
+                    <span>$Custom Amount</span> - Please enter an amount
+                    <input type="number" placeholder="Enter custom amount" class="custom-input">
+                </label>
+            </form>
+            <div class="navigation">
+              <button class="next-btn" onclick="goToSlide2()">Next</button> 
             </div>
+        </div>
         
-            <!-- Slide 2 -->
-            <div class="form-slide" id="slide2">
-              <h3>Choose Payment Option</h3>
+        <div class="carousel-slide2" id="slide-2" style="display: none;">
+          <div class="orange-banner">
+              <h1>Payment Type</h1>
+          </div>
+          <div class="content">
+              <p>Choose a payment option:</p>
               <div class="payment-options">
-                <div class="payment-banner" id="credit-card">Credit/Debit Card</div>
-                <div class="payment-banner" id="bank-transfer">Bank Transfer</div>
-                <div class="payment-banner" id="paypal">PayPal</div>
-                <div class="payment-banner" id="venmo">Venmo</div>
+                  <button class="payment-btn" onclick="goToSlide3()">
+                      <img src="images/pay1.png" alt="Credit/Debit Card">
+                  </button>
+                  <button class="payment-btn">
+                      <img src="images/pay2.png" alt="Bank Transfer">
+                  </button>
+                  <button class="payment-btn">
+                      <img src="images/pay3.png" alt="Donate with PayPal">
+                  </button>
+                  <button class="payment-btn">
+                      <img src="images/pay4.png" alt="Venmo">
+                  </button>
               </div>
-            </div>
+          </div>
+        </div>
         
-            <!-- Slide 3 -->
-            <div class="form-slide" id="slide3">
-              <h3>Personal Information</h3>
-              <div class="form-group">
-                <label>First Name</label>
-                <input type="text" id="first-name" required>
-              </div>
-              <div class="form-group">
-                <label>Last Name</label>
-                <input type="text" id="last-name" required>
-              </div>
-              <div class="form-group">
-                <label>Email</label>
-                <input type="email" id="email" required>
-              </div>
-              <div class="form-group">
-                <label>Name on Certificate</label>
-                <input type="text" id="certificate-name" required>
-              </div>
-              <label><input type="checkbox" id="email-receipt"> I want to receive my receipt via email</label>
+        <div class="carousel-slide3" id="slide-3" style="display: none;">
+          <div class="orange-banner">
+              <h1>Payment Information</h1>
+          </div>
+          <div class="form-container">
+              <form action="thanks.html" method="post">
+                  <!-- Personal Information -->
+                  <section class="row1">
+                    <label for="personal-info">Personal Information:</label>
+                    <div class="form-row">
+                        <input type="text" id="first-name" placeholder="First Name" required>
+                        <input type="text" id="last-name" placeholder="Last Name" required>
+                    </div>
+                    <input type="email" placeholder="Email Address" required>
+                    <div class="radio-group">
+                        <input type="radio" id="receipt" name="emailReceipt" checked>
+                        <label for="receipt">Receive receipt via email</label>
+                    </div>
+                  </section>
         
-              <h3>Card Information</h3>
-              <div class="form-group">
-                <label>Card Number</label>
-                <input type="text" id="card-number" placeholder="1234 5678 9012 3456" required>
-              </div>
-              <div class="form-row">
-                <div>
-                  <label>MM/YY</label>
-                  <input type="text" id="expiry-date" placeholder="MM/YY" required>
-                </div>
-                <div>
-                  <label>CVV</label>
-                  <input type="text" id="cvv" placeholder="123" required>
-                </div>
-              </div>
+                  <!-- Payment Information -->
+                  <section class="row2">
+                    <label for="payment-info">Payment Information:</label>
+                    <input type="text" id="card-number" placeholder="1234 5678 9123" required>
+                    <div class="form-row">
+                        <input type="text" placeholder="MM/YY" required>
+                        <input type="text" placeholder="CVC Code" required>
+                    </div>
+                  </section>
         
-              <h3>Billing Details</h3>
-              <div class="form-group">
-                <label>Street Address</label>
-                <input type="text" id="street-address" required>
-              </div>
-              <div class="form-group">
-                <label>Apt#</label>
-                <input type="text" id="apt-number">
-              </div>
-              <div class="form-group">
-                <label>City</label>
-                <input type="text" id="city" required>
-              </div>
-              <div class="form-group">
-                <label>State</label>
-                <input type="text" id="state" required>
-              </div>
-              <div class="form-group">
-                <label>Zip</label>
-                <input type="text" id="zip" required>
-              </div>
-              <button type="submit" class="submit-btn">Submit Donation</button>
-            </div>
-          </form>
+                  <!-- Billing Details -->
+                  <section class="row3">
+                    <label for="billing-info">Billing Details:</label>
+                    <div class="form-row">
+                        <input type="text" placeholder="Street Address:" required>
+                        <input type="text" placeholder="Apt#:">
+                    </div>
+                    <div class="form-row">
+                        <input type="text" placeholder="City:" required>
+                        <input type="text" placeholder="State:" required>
+                    </div>
+                    <input type="text" placeholder="Zip:" required>
+                  </section>
+        
+                  <!-- Submit Button -->
+                   <div>
+                    <a href="thanks.html">
+                      <button type="submit" class="submit-btn">Submit Donation</button>
+                    </a>
+                  </div>
+              </form>
+          </div>
+        </div>
+        </div>
+        
         
     </div>
   </section>

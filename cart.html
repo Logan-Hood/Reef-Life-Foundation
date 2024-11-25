@@ -28,7 +28,7 @@
                 <li class="dropdown">
                     <a href="impact.html">Your Impact</a>
                     <ul class="dropdown-menu">
-                        <li><a href="project.html">Projects</a></li>
+                        <li><a href="projects.html">Projects</a></li>
                         <li><a href="intel.html">IntelliReefs</a></li>
                     </ul>
                 </li>
@@ -74,7 +74,7 @@
         <li class="accordion-item">
             <div class="accordion-header">Your Impact &#9654;</div>
             <ul class="accordion-content">
-                <li><a href="project.html">Projects</a></li>
+                <li><a href="projects.html">Projects</a></li>
                 <li><a href="intel.html">IntelliReefs</a></li>
             </ul>
         </li>
@@ -218,15 +218,89 @@
       </section>
     
       <!-- Payment Section -->
-      <section class="payment-section">
-        <h2>Choose a payment option:</h2>
-        <div class="payment-options">
-          <button class="paypal">Donate with PayPal</button>
-          <button class="venmo">Venmo</button>
-          <button class="credit-card">Credit/Debit Card</button>
-          <button class="bank-transfer">Bank Transfer</button>
-        </div>
-      </section>
+      <div class="carousel-slide2" id="slide-1">
+        <div class="orange-banner">
+          <h1>Payment Type</h1>
+      </div>
+      <div class="content">
+          <p>Choose a payment option:</p>
+          <div class="payment-options">
+              <button class="payment-btn" onclick="goToSlide2()">
+                  <img src="images/pay1.png" alt="Credit/Debit Card">
+              </button>
+              <button class="payment-btn">
+                  <img src="images/pay2.png" alt="Bank Transfer">
+              </button>
+              <button class="payment-btn">
+                  <img src="images/pay3.png" alt="Donate with PayPal">
+              </button>
+              <button class="payment-btn">
+                  <img src="images/pay4.png" alt="Venmo">
+              </button>
+          </div>
+      </div>
+    </div>
+    
+    <div class="carousel-slide3" id="slide-2" style="display: none;">
+      <div class="orange-banner">
+          <h1>Payment Information</h1>
+      </div>
+      <div class="form-container">
+          <form action="thanks2.html" method="post">
+              <!-- Personal Information -->
+              <section class="row1">
+                <label for="personal-info">Personal Information:</label>
+                <div class="form-row">
+                    <input type="text" id="first-name" placeholder="First Name" required>
+                    <input type="text" id="last-name" placeholder="Last Name" required>
+                </div>
+                <input type="email" placeholder="Email Address" required>
+                <input type="text" placeholder="Name on Certificate">
+                <div class="radio-group">
+                    <input type="radio" id="receipt" name="emailReceipt" checked>
+                    <label for="receipt">Receive receipt via email</label>
+                </div>
+              </section>
+    
+              <!-- Payment Information -->
+              <section class="row2">
+                <label for="payment-info">Payment Information:</label>
+                <input type="text" id="card-number" placeholder="1234 5678 9123" required>
+                <div class="form-row">
+                    <input type="text" placeholder="MM/YY" required>
+                    <input type="text" placeholder="CVC Code" required>
+                </div>
+              </section>
+    
+              <!-- Billing Details -->
+              <section class="row3">
+                <label for="billing-info">Billing Details:</label>
+                <div class="form-row">
+                    <input type="text" placeholder="Street Address:" required>
+                    <input type="text" placeholder="Apt#:">
+                </div>
+                <div class="form-row">
+                    <input type="text" placeholder="City:" required>
+                    <input type="text" placeholder="State:" required>
+                </div>
+                <input type="text" placeholder="Zip:" required>
+              </section>
+    
+              <!-- Submit Button -->
+               <div>
+                <a href="thanks2.html">
+                  <button type="submit" class="submit-btn">Submit Donation</button>
+                </a>
+              </div>
+          </form>
+      </div>
+    </div>
+    </div>
+    
+
+
+
+
     </div>
 </main>
 

@@ -410,3 +410,51 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   });
 });
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// gift a reef payment carousel
+    function goToSlide2() {
+        // Hide Slide 1
+        document.getElementById('slide-1').style.display = 'none';
+        // Show Slide 2
+        document.getElementById('slide-2').style.display = 'flex';
+    }
+
+
+
+
+
+
+    function goToSlide3() {
+        // Hide Slide 2
+        document.getElementById('slide-2').style.display = 'none';
+        // Show Slide 3
+        document.getElementById('slide-3').style.display = 'flex';
+    }
